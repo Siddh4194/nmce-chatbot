@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transperant; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+.main {
+    height: 450px;
+    width: 350px;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1.4px rgba(0,0,0,.8);
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  
+  .nav {
+    height: 15%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(102deg, rgba(2,0,36,1) 0%, rgba(5,14,61,1) 0%, rgba(16,42,154,0.8015581232492998) 91%);
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav button{
+    justify-content: right;
+  }
+  .nav h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+ 
+  
+  .bottom {
+    height: 17%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 10px 10px ;
+    display: flex;
+    margin:auto;
+     align-items: center;
+    justify-content: center;
+  }
+
+  .divider {
+    border-top: 2px solid #cfcdcd;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin:auto;
+     align-items: center;
+    justify-content: center;
+  }
+
+/* message time */
+
+.time{
+  display: flex;
+  justify-content: center;
+}
+
+
+  .ask-body{
+    width:100%;
+    height: max-content;
+    display: flex;
+    margin:auto;
+     align-items: center;
+    justify-content: center;
+  }
+
+  .ask-body input{
+    width: 75%;
+    border: none;
+    margin: auto;
+    height: 5.5vh;
+  }
+
+  .ask-body input:focus{
+    outline: none;
+  }
+  .in{
+    margin: 1vh 0 0 0;
+  }
+  .ask-body button{
+    width: 6vh;
+    height: 6vh;
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(102deg, rgba(2,0,36,1) 0%, rgba(5,14,61,1) 0%, rgba(16,42,154,0.8015581232492998) 91%);
+    border-radius: 70%;
+  }
+
+  .ask-body button i{
+    color: black;
+    font-size: 0.6rem;
+
+  }
+  ::placeholder{
+    font-size: 2.5vh;
+  }
+/* 
+  .bottom form{
+    width:100% ;
+  }
+  .bottom input{
+    height: 92%;
+    width: 78%;
+    margin: 0;
+    border-radius:  0 0 0 10px;
+    border: none;
+    float: left;
+  }
+  
+  .bottom input:focus{
+    outline: none;
+  }
+  .bottom button{
+    margin: 0;
+    color: black;
+    height: 100%;
+    width: 20%;
+    border-radius: 0 0 10px 0;
+    border: none;
+  } */
+
+.chatBody {
+    height: 64%;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+    align-items: flex-end;
+    /* display:block; */
+  }
+
+.user-message, .bot-message{
+  width: max-content;
+  max-width: 60%;
+  border-radius: 6px 0  6px 6px ;
+  background-color: #d4d4d4;
+  margin-top: 3%;
+  padding: 8px 6px;
+  font-size: 3vh;
+}
+
+.bot-message{
+  border-radius: 0 6px 6px 6px ;
+  background-color: #070e6d;
+  color: aliceblue;
+  align-self: flex-start;
+}
+
+.responce-button {
+  font-size: .6rem;
+  width: max-content;
+  border: 1px solid #d4d4d4;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+}
+
+.responce-button:hover {
+  background-color: #fff;
+  color: #070e6d;
+}

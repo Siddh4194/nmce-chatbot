@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="/chatbot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- javascript -->
+    <script src="/handler.js" defer></script>
+    <script src="/response.js" defer>  </script>
+    <script src="/brain.js" defer></script>
+    <script src="//unpkg.com/brain.js"></script>
+
+  </head>
+  <body>
+    <div class="render">
+    </div>
+    <div class="main">
+      <!-- navbar heading -->
+      <div class="nav">
+        <h3>ChatBot</h3>
+        <a href="" onclick="exit()">  <i class="fa-solid fa-fa-send"></i></a>
+      </div>
+      <!-- chatting screen -->
+      <div class="chatBody">
+        <div class="loading">
+
+        </div>
+      </div>
+      <!-- text area -->
+      <div class="bottom">
+        <div class="divider">
+          <div class="ask-body">
+              <input class="in" type="text" name="usermsg" placeholder="Ask a Question"/>
+              <button class="send" type="submit">
+                  <i class="fa-solid fa-paper-plane" style="color: white;"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
